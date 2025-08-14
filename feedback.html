@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <form action="http://localhost/project/feedback.php" method="post">
+        <div>
+            <div class="rating-box">
+                <div class="heading">Your Feedback is Valuable!</div>
+                <h3> Help us to know about our Service</h3>
+                <h5>Email:</h5> 
+                <input type="text" name="email" placeholder="enter registered email" /><br /><br />
+
+                <p><h5>Feedback1:</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="rating">
+                    <h4>Give your rating</h4>
+                    <input type="radio" name="feedback1_rating" value="Excellent"> Excellent
+                    <input type="radio" name="feedback1_rating" value="Very Good"> Very Good
+                    <input type="radio" name="feedback1_rating" value="Good"> Good
+                    <input type="radio" name="feedback1_rating" value="Need to improve"> Need to improve
+                    
+                </div><br />
+
+                <p><h5>Feedback2:</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="rating">
+                    <h4>Give your rating</h4>
+                    <input type="radio" name="feedback2_rating" value="Excellent"> Excellent
+                    <input type="radio" name="feedback2_rating" value="Very Good"> Very Good
+                    <input type="radio" name="feedback2_rating" value="Good"> Good
+                    <input type="radio" name="feedback2_rating" value=" Need to improve">  Need to improve
+                    
+                </div><br />
+
+                <p><h5>Feedback3:</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="rating">
+                    <h4>Give your rating</h4>
+                    <input type="radio" name="feedback3_rating" value="Excellent"> Excellent
+                    <input type="radio" name="feedback3_rating" value="Very Good"> Very Good
+                    <input type="radio" name="feedback3_rating" value="Good"> Good
+                    <input type="radio" name="feedback3_rating" value="Need to improve"> Need to improve
+                    
+                </div><br />
+
+                <h5>Remarks:</h5>
+                <textarea name="remarks" placeholder="Enter your comments here"></textarea><br /><br />
+
+                <input type="submit" value="Submit Feedback">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

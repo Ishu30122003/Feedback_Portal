@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="http://localhost/project/logins.php" method="post">
+        <h2>Login</h2>
+        <div class= "input-group">
+          <input type="text" id="email" name="email" required>
+          <label for="">email</label>
+        </div>
+        <div class="input-group">
+          <input type="password"  name="psw" required>
+          <label for="">Password</label>
+        </div>
+        <div class="input-group">
+          <label class="role-label" for="role"></label>
+          <select id="role" name="role" required>
+            <option value="" disabled selected> Role </option>
+           <option value="user">User</option>
+              <option value="admin">Admin</option>
+          </select>
+      </div>
+
+        <div class="remember">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit">Login</button>
+        <div class="signUp-link">
+          <p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>

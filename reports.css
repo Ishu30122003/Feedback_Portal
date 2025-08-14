@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgb(2, 2, 43), rgb(8, 8, 116),rgb(65, 65, 237));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+    background: #fff;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(185, 152, 8, 0.15);
+    animation: slideIn 1s ease-out;
+
+}
+
+h1 {
+    text-align:center;
+    color: #060000;
+    text-shadow: 3px 3px #2b097b;
+    margin-bottom: 80px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 800px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 70px rgba(194, 203, 15, 0.15);
+    background-color: #fafafa;
+    animation: tableFadeIn 1s ease-in;
+    margin-bottom: 80px;
+    
+}
+
+.styled-table thead tr {
+    background-color: #15043d;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    animation: headerZoom 0.8s ease-in;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    animation: cellPop 0.6s ease-in-out;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s ease;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    animation: rowHover 0.3s ease-in-out;
+}
+
+
+.top-right a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #042717;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.top-right a:hover {
+    background-color: #007d63;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes tableFadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes headerZoom {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes cellPop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rowHover {
+    from { transform: scale(1); }
+    to { transform: scale(1.02); }
+}
